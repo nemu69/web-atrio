@@ -1,3 +1,7 @@
-progress::-webkit-progress-bar {
-	background-color: #eeeeee;
+
+.progress-bar {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }

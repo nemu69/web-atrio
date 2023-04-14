@@ -1,15 +1,24 @@
 <div class="container">
-	<p class="title">Test technique WEB-ATRIO réalisé par [Nom] [Prenom] réalisé le [Date du jour au format DD/MM/YYYY]</p>
+	<p class="title">Test technique WEB-ATRIO réalisé par Page-Leonie Nemuel réalisé le 14/04/2023</p>
 
 	<div class="progress">
-		<progress-bar></progress-bar>
-		<progress-bar></progress-bar>
+		<progress-bar [progress]="progressBar1" [label]="'Initialisation du test technique'"></progress-bar>
+		<progress-bar [progress]="progressBar2" [label]="'Avancement de la phase de développement'"></progress-bar>
 	</div>
 
 	<div class="buttons">
-		<button-atrio></button-atrio>
-		<button-atrio></button-atrio>
-		<button-atrio></button-atrio>
+		<button-atrio 
+			[label]="'Remettre à zéro les compteurs'"
+			(onClick)="setAllProgressBars(0)"
+		></button-atrio>
+		<button-atrio 
+			[label]="'Ajouter 5%'"
+			(onClick)="addAllProgressBars(5)"
+		></button-atrio>
+		<button-atrio 
+			[label]="'Ajouter 10%'"
+			(onClick)="addAllProgressBars(10)"
+		></button-atrio>
 	</div>
 
 </div>

@@ -1,4 +1,8 @@
 <div class="container">
-	{{progress}}
-	<progress [value]="progress" max="100"></progress>
+	{{label}}
+	<div class="progress-bar">
+		{{progress}}%
+		<progress class="progress" [value]="progress" max="100"
+		></progress>
+	</div>
 </div>
